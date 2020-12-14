@@ -6,4 +6,5 @@ def home(request):
         'title': 'StartGreat',
         'heder_title': "La productivité et l'efficacité ",
     }
+    print(request.headers)
     return render(request, 'personal/home.html', context)
