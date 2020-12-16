@@ -24,5 +24,5 @@ from personal.views import (
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('tutoApp/', include('tutoApp.urls')),
-    path('', home, name='home'),
+    # path('', home, name='home'),
 ]

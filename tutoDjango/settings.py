@@ -34,6 +34,7 @@ INSTALLED_APPS = [
 
     'tutoApp.apps.TutoappConfig',
     'personal.apps.PersonalConfig',
+    'account.apps.AccountConfig',
 
     'django.contrib.admin',
     'django.contrib.auth',
@@ -70,6 +71,8 @@ TEMPLATES = [
         },
     },
 ]
+
+AUTH_USER_MODEL = "account.Account"
 
 WSGI_APPLICATION = 'tutoDjango.wsgi.application'
 
